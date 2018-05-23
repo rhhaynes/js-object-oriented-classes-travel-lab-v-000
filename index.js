@@ -20,6 +20,6 @@ class Route {
     return vDis + hDis;
   }
   estimatedTime(isPeakHours){
-    return ( isPeakHours ? this.blocksTravelled()/3 : this.blocksTravelled()/2 );
+    return ( isPeakHours ? this.blocksTravelled()/2 : this.blocksTravelled()/3 );
   }
 }
