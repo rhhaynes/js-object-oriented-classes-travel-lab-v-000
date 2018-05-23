@@ -20,6 +20,6 @@ class Route {
     return vDis + hDis;
   }
   estimatedTime(){
-    bla
+    return 
   }
 }
