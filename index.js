@@ -19,7 +19,7 @@ class Route {
     const hDis = Math.abs( eastWest.indexOf(this.beginningLocation.horizontal) - eastWest.indexOf(this.endingLocation.horizontal) );
     return vDis + hDis;
   }
-  estimatedTime(peakHours){
-    return peakHours
+  estimatedTime(isPeakHours){
+    return (isPeakHours ? this.blocksTravelled/3 : this.blocksTravelled/2);
   }
 }
